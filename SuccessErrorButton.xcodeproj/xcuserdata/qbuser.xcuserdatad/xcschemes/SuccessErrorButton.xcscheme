@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B5081EF1E0BFF3900583EE0"
+               BuildableName = "SuccessErrorButton.app"
+               BlueprintName = "SuccessErrorButton"
+               ReferencedContainer = "container:SuccessErrorButton.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B5082031E0BFF3900583EE0"
+               BuildableName = "SuccessErrorButtonTests.xctest"
+               BlueprintName = "SuccessErrorButtonTests"
+               ReferencedContainer = "container:SuccessErrorButton.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B50820E1E0BFF3900583EE0"
+               BuildableName = "SuccessErrorButtonUITests.xctest"
+               BlueprintName = "SuccessErrorButtonUITests"
+               ReferencedContainer = "container:SuccessErrorButton.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0B5081EF1E0BFF3900583EE0"
+            BuildableName = "SuccessErrorButton.app"
+            BlueprintName = "SuccessErrorButton"
+            ReferencedContainer = "container:SuccessErrorButton.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0B5081EF1E0BFF3900583EE0"
+            BuildableName = "SuccessErrorButton.app"
+            BlueprintName = "SuccessErrorButton"
+            ReferencedContainer = "container:SuccessErrorButton.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0B5081EF1E0BFF3900583EE0"
+            BuildableName = "SuccessErrorButton.app"
+            BlueprintName = "SuccessErrorButton"
+            ReferencedContainer = "container:SuccessErrorButton.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

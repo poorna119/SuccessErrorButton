@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuccessErrorButton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1V-cN-EJ4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nSd-68-VrK"/>
+                                    <constraint firstAttribute="width" constant="46" id="pqa-0l-3yk"/>
+                                </constraints>
+                                <state key="normal" title="S"/>
+                                <connections>
+                                    <action selector="successButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bo0-ZD-3F4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ9-F5-IYk">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="B6q-ET-svR"/>
+                                    <constraint firstAttribute="height" constant="30" id="pDO-5K-O4j"/>
+                                </constraints>
+                                <state key="normal" title="E"/>
+                                <connections>
+                                    <action selector="errorButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HI-RI-YSF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-cq-z4H">
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UNr-5e-UIK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTb-bq-DLR">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="IoR-g0-BuV"/>
+                                </constraints>
+                                <state key="normal" image="arrow.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PYn-cq-z4H" firstAttribute="leading" secondItem="mQ9-F5-IYk" secondAttribute="trailing" constant="270" id="1oI-js-nAL"/>
+                            <constraint firstItem="hTb-bq-DLR" firstAttribute="firstBaseline" secondItem="mQ9-F5-IYk" secondAttribute="baseline" id="2mo-NN-krB"/>
+                            <constraint firstAttribute="trailing" secondItem="PYn-cq-z4H" secondAttribute="trailing" constant="16" id="6n0-pX-dVs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PYn-cq-z4H" secondAttribute="bottom" constant="249" id="77W-Jj-8KC"/>
+                            <constraint firstItem="T1V-cN-EJ4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="BJP-VN-TOB"/>
+                            <constraint firstItem="hTb-bq-DLR" firstAttribute="firstBaseline" secondItem="mQ9-F5-IYk" secondAttribute="firstBaseline" id="GVX-Wg-nsA"/>
+                            <constraint firstItem="hTb-bq-DLR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H2c-VA-shN"/>
+                            <constraint firstItem="PYn-cq-z4H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="368" id="L4E-YO-IrC"/>
+                            <constraint firstItem="T1V-cN-EJ4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="305" id="NFn-dz-DF8"/>
+                            <constraint firstItem="mQ9-F5-IYk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="381" id="OOX-XQ-xma"/>
+                            <constraint firstItem="mQ9-F5-IYk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="iou-SK-yjl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hTb-bq-DLR" secondAttribute="bottom" constant="201" id="tFA-5u-qd1"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-175.19999999999999" y="-145.27736131934034"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow.png" width="27" height="20"/>
+    </resources>
 </document>
