@@ -8,7 +8,7 @@ s.summary = "A short description of SuccessErrorButton. It is a customized butto
 s.requires_arc = true
 
 # 2
-s.version = "0.1.6"
+s.version = "0.1.7"
 
 # 3
 

@@ -8,13 +8,13 @@
 import UIKit
 
 class ErrorSuccessButton: UIButton {
-    
+    var shadowLayer: CAShapeLayer!
     var isRotating = false
     var buttonHeight = 0.0
     var buttonWidth = 0.0
     var buttonX = 0.0
     var buttonY = 0.0
- //   var oldCenter =
+    //var oldCenter =
      override  func awakeFromNib() {
         let newCenter = self.center
         self.layer.removeAllAnimations()
@@ -42,15 +42,28 @@ class ErrorSuccessButton: UIButton {
         self.layer.removeAllAnimations()
         self.backgroundColor = UIColor.white
         self.layer.cornerRadius = CGFloat(buttonHeight)/2
+        
+        
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 5, height: 5)
+        self.layer.shadowRadius = 5
+            
+        
+            
+        
+        
+
         let image = UIImage(named: "arrow.png") as UIImage?
         self.setImage(image, for: .normal)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let oldCenter = self.center
+        
+        
+        
         UIView.animate(withDuration: 0.3, animations: {
             self.frame.size.width = CGFloat(self.buttonHeight) + 10
             self.frame.size.height = CGFloat(self.buttonHeight) + 10
-            //var newnumber:Int = something.toInt()! + somenumber
             self.layer.cornerRadius =  self.frame.size.width/2
             self.center = oldCenter
             self.layoutIfNeeded()
@@ -114,7 +127,7 @@ func successEnable() {
         self.imageView!.animationDuration = 0.3
         self.imageView!.startAnimating()
         
-       let triggerTime = (Int64(NSEC_PER_SEC) * 1)
+       let triggerTime = (Int64(USEC_PER_SEC) * 400)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(triggerTime) / Double(NSEC_PER_SEC), execute: { () -> Void in
             let animation = CABasicAnimation(keyPath: "position")
             animation.duration = 0.08
@@ -125,13 +138,36 @@ func successEnable() {
             self.layer.add(animation, forKey: "position")
             
         })
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
     func reset() {
-   /*     self.center = self.center
-       // self.center.y = CGFloat(buttonY)
-        self.frame.size.width = CGFloat(buttonWidth)
-        self.frame.size.height = CGFloat(buttonHeight)
-        //self.center = oldCenter*/
+  
         self.awakeFromNib()
     }
    
