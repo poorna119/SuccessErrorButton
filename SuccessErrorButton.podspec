@@ -8,7 +8,7 @@ s.summary = "A short description of SuccessErrorButton. It is a customized butto
 s.requires_arc = true
 
 # 2
-s.version = "0.1.7"
+s.version = "0.1.8"
 
 # 3
 
@@ -42,9 +42,9 @@ s.source = { :git => "https://github.com/poorna119/SuccessErrorButton.git", :tag
 
 # 8
 
-s.source_files = "SuccessErrorButton.git/Sources/**/*.{swift}"
+s.source_files = "SuccessErrorButton/Sources/**/*.{swift}"
 
 # 9
 
-s.resources = "SuccessErrorButton.git/Sources/Resources/**/*.{png}"
+s.resources = "SuccessErrorButton/Sources/Resources/**/*.{png}"
 end
